@@ -26,7 +26,6 @@ cd auto-balance-ff
 
 ```shell
 yarn install
-yarn add https://github.com/Folks-Finance/folks-finance-js-sdk
 ```
 
 ### Prepare scripts
