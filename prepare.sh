@@ -7,6 +7,7 @@ cd ../../
 cd ./node_modules/tinyman-ts-sdk && tsc
 cd ../../
 sed -i "s|'./src/asc.json'|'./node_modules/tinyman-ts-sdk/src/asc.json'|g" ./node_modules/tinyman-ts-sdk/dist/contracts.js
+sed -i "s|0xFFFFFFFFFFFFFFFFn|BigInt(0xFFFFFFFFFFFFFFFF);|g" node_modules/tinyman-ts-sdk/src/Transactions/Bootstrap.ts
 
 # compile auto-balance
 tsc
