@@ -79,6 +79,7 @@ async function withdraw(pool: Pool, amount: bigint, params: SuggestedParams,) {
 }
 
 async function main() {
+    console.log("Program started");
     const oracle = TestnetOracle;
     const tokenPair = TestnetTokenPairs["ALGO-USDC"];
     const reserveAddress = TestnetReserveAddress;
@@ -153,6 +154,7 @@ async function main() {
             }
         }
     }
+    console.log("Program ended");
 }
 
 main().catch(console.error);
