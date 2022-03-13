@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "folks-finance-js-sdk": "https://github.com/Folks-Finance/folks-finance-js-sdk",
     "tinyman-ts-sdk": "^1.0.1"
   },
   "devDependencies": {
