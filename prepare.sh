@@ -9,6 +9,7 @@ sed -i '' "s|0xFFFFFFFFFFFFFFFFn|BigInt(0xFFFFFFFFFFFFFFFF)|g" node_modules/tiny
 sed -i '' "s|es2021|es6|g" node_modules/tinyman-ts-sdk/tsconfig.json
 sed -i '' "s|esnext|commonjs|g" node_modules/tinyman-ts-sdk/tsconfig.json
 sed -i '' "s|\"type\": \"module\",||g" node_modules/tinyman-ts-sdk/package.json
+cp -f node_modules/tinyman-ts-sdk/src/global.d.ts ./src/
 rm -rf ./node_modules/tinyman-ts-sdk/src/Examples
 cd ./node_modules/tinyman-ts-sdk && tsc
 cd ../../
