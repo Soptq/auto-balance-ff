@@ -1,3 +1,5 @@
 /dist/
 /.idea/
 /node_modules/
+/src/global.d.ts
+yarn-error.log
